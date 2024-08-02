@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="Head.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="Registration.css">
+        <script>
+            function check1(){
+            var uname=document.form.username.value;
+            var pass=document.form.password.value;
+            if(uname==null || uname=="") {
+                alert("Username cannot be blank");
+                return false;
+            }else if(pass.length<6){
+            alert("Password cannot be blank");
+            return false;
+           }
+            return true; 
+        }
+        </script>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <strong><li><a href=".\main.html">Menu</a></li></strong>
+                <strong><li><a href="Showmore.html">Food delivery</a></li></strong>
+                <strong><li><a href=".\Contact.html">Contact</a></li></strong>
+                <strong><li><a href=".\Registration.html">Order</a></li></strong>
+                <strong><li><a href=".\Login.html">Login</a></li><br></strong>
+            </ul>
+            </nav><br><br><br>
+            <h1>We are happy to here from you..<a class="a" href="Login.html">if already registered</a></h1>
+            <hr class="hr">
+           <img src="1.jpg" width="300px" height=370px>
+           <section>
+            <form name="form" action="Login.html" onsubmit="return check1(this)">
+       Name    <input type=text name=username placeholder="username" class=container><br><br>
+       Password   <input type=password name="password" placeholder="Password" class=container><br><br>
+       Email    <input list="email" name="mymails" placeholder="Email" class=container><br><br>
+    <datalist id="email" class=container required>
+            <option value="harshi@gmail.com"></option>
+            <option value="harshitha@gmail.com"></option>
+            <option value="harshit@gmail.com"></option>
+    </datalist>
+       Address     <input type=text placeholder=Address class=container><br><br>
+       Mobile number     <input type="tel" name="personal" id="per1" pattern="[0-9]{10}" class=container title="the ten digits number" placeholder="Mobile number"><br><br>
+       Drop us a line    <input type=text name=suggestion placeholder="Your message" class=container><br><br>
+       How did you find us?  <select name="Find" class="drop">  
+        <option value="One">Friends</option>
+        <option value="Two">Family</option>
+        <option value="Three">Advertisement</option>
+        <option value="Four">Others</option>
+      </select><br><br>
+      <a href="Loginsuccess.html"><input type="submit" class="btn btn-warning" value="Order done"></a>
+    </form>   
+    </section>
+        <footer>&copy;Food ,,,All rights are reserved..</footer>
+    </body>
+</html>

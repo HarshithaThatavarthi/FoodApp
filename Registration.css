@@ -1,0 +1,48 @@
+body{
+    background-image:url("Register1.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    font-size: larger;
+    }
+    section{
+        padding-left:400px;
+        padding-top: 30px;
+    }
+    h1{
+        padding-left:300px;
+        font-family:Arial, Helvetica, sans-serif;
+        padding-top:0px;
+        color:BLACK;
+    }
+    .a{
+        font-size:small
+    }
+    .hr{
+        width:300px;
+        color:#f75e1a
+    }
+    .container{
+        width: 280px; 
+        height: 39px; 
+        border-radius: 10px;
+        padding-left:20px;
+    }
+    .drop{
+        width:280px;
+        height:39px;
+        border-style:outset;
+    }
+    img{
+        float:left;
+        padding-top:20px;   
+    }
+    .button{
+    color:#f75e1a;
+    width:130px;
+    height:50px;
+    font-size:20px;
+    shape-margin: 50px;
+    border-radius:70px;
+    background-color:white;
+    border-color:#f75e1a;
+}

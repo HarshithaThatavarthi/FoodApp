@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" href="Head.css">
+        <link rel="stylesheet" href="Login.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script>
+            function check1(){
+            var uname=document.form.uname.value;
+            var pass=document.form.password.value;
+            if(uname==null || uname=="") {
+                alert("Username cannot be blank");
+                return false;
+            }else if(pass.length<6){
+            alert("Password cannot be blank");
+            return false;
+           }
+            return true; 
+        }
+            </script>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <strong><li><a href=".\main.html">Menu</a></li></strong>
+                <strong><li><a href="hungry.html">Food delivery</a></li></strong>
+                <strong><li><a href=".\Contact.html">Contact</a></li></strong>
+                <strong><li><a href=".\Registration.html">Order</a></li></strong>
+                <strong><li><a href=".\Login.html">Login</a></li><br></strong>
+            </ul>
+            </nav><br><br>
+            <img src="app-iPhone.png" width="500px" height="390px">
+            <form name="form" action="Loginsuccess.html" onsubmit="return check1(this)">
+                <div class="container">
+                    <h2>Login Page</h2><br> 
+                <div class="input-group" style="margin-left: 200px;">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> 
+                 <input type="text" name="uname" placeholder="Enter Username" class="form-control" style="width: 200px; flex-direction: column-reverse;"><br>
+                </div>
+                <br>
+                 <div class="input-group" style="margin-left: 200px;">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                <input id="password" style="width: 200px" type="password" class="form-control" name="password" placeholder="Password"><br> 
+                </div>
+                <br>
+                <br> 
+                <input type="submit" class="btn btn-info">         
+            </div>
+            <footer>&copy;Food ,,,All rights are reserved..</footer>
+    </body>
+</html>
